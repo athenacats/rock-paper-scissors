@@ -1,38 +1,46 @@
-let getComputerChoice = ["rock", "paper", "scissors"]
-let computerSelection = getComputerChoice[Math.floor(Math.random()*getComputerChoice.length)] 
+let game = ["rock", "paper", "scissors"];
+
+function getComputerChoice() {
+    return game[Math.floor(Math.random()*game.length)]; 
+    }
+
+let computerSelection = getComputerChoice()
+console.log(computerSelection)
 let playerSelection = prompt("Choose Rock, Paper or Scissors")
 function roundOne(playerSelection, computerSelection) {
         if (playerSelection.toLowerCase() === computerSelection) {
-            return "Draw! " + playerSelection + " is the same as " + computerSelection;
+            return "Draw!";
         }
     
         else if (playerSelection.toLowerCase() === "paper" &&
             computerSelection === "rock") {
-            return "You win! " + playerSelection + " trumps " + computerSelection;
+            return "You win!";
         }
         else if (playerSelection.toLowerCase() === "rock" &&
             computerSelection === "scissors") {
-            return "You win! " + playerSelection + " trumps " + computerSelection;
+            return "You win!";
         }
         else if (playerSelection.toLowerCase() === "scissors" &&
             computerSelection === "paper") {
-                return "You win! " + playerSelection + " trumps " + computerSelection;
+                return "You win!";
             }
         else if (playerSelection.toLowerCase() === "paper" &&
         computerSelection === "scissors") {
-            return "You lose! " + computerSelection + " trumps " + playerSelection;
+            return "You lose!";
         }
         else if (playerSelection.toLowerCase() === "rock" &&
         computerSelection === "paper") {
-            return "You lose! " + computerSelection + " trumps " + playerSelection;
+            return "You lose!";
         }
         else if (playerSelection.toLowerCase() === "scissors" &&
         computerSelection === "rock") {
-            return "You lose! " + computerSelection + " trumps " + playerSelection;
+            return "You lose!";
         }
         else {
             return "You must make a selection";
         }
-
     }
+
+    
+    console.log(roundOne(playerSelection, computerSelection))
 
