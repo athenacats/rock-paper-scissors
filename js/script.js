@@ -1,7 +1,6 @@
-function getComputerChoice(choice) 
-    let choice = ('rock','paper','scissors');
+function getComputerChoice(rock, paper, scissors) {
     let playerSelection = prompt("Choose rock, paper or scissors");
-    let computerSelection = choice[Math.floor(Math.random()*choice.length)]
+    let computerSelection = getComputerChoice[Math.floor(Math.random()*getComputerChoice.length)]
     function roundOne(playerSelection, computerSelection) {
         if (playerSelection.toLowerCase === computerSelection) {
             return "Draw!"
@@ -22,3 +21,4 @@ function getComputerChoice(choice)
             return "You lose!"
         }
     }
+}
