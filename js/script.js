@@ -52,6 +52,7 @@ function roundOne(playerSelection, computerSelection) {
     }
 }
 console.log(roundOne(playerSelection, computerSelection))
+console.log("Player Score is " + playerScore + " and Computer Score is " + computerScore)
 
 
 
