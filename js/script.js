@@ -55,6 +55,20 @@ console.log(roundOne(playerSelection, computerSelection))
 console.log("Player Score is " + playerScore + " and Computer Score is " + computerScore)
 
 
+function game() {
+    for (i = 0; i <= 5; i++) {
+        roundOne();
+        }
+        if (i === 5 &&
+            playerScore > computerScore) {
+            return "Congratulations you lucky ducky!";
+        }
+        else if (i === 5 &&
+            playerScore < computerScore) {
+            return "Waah, waah, try again!";
+        }
+    }
+
 
     
    
