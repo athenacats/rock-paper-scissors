@@ -7,6 +7,11 @@ function getComputerChoice() {
 let computerSelection = getComputerChoice()
 console.log(computerSelection)
 let playerSelection = prompt("Choose Rock, Paper or Scissors")
+
+for (let i = 0; i <= 5; i++) {
+    function 
+}
+
 function roundOne(playerSelection, computerSelection) {
         if (playerSelection.toLowerCase() === computerSelection) {
             return "Draw!";
