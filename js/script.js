@@ -7,45 +7,53 @@ function getComputerChoice() {
 let computerSelection = getComputerChoice()
 console.log(computerSelection)
 let playerSelection = prompt("Choose Rock, Paper or Scissors")
+let computerScore = 0
+let playerScore = 0
 
-for (let i = 0; i <= 5; i++) {
-    function game(i){ 
-        function roundOne(playerSelection, computerSelection) {
-            if (playerSelection.toLowerCase() === computerSelection) {
-                return "Draw!";
-            }
-    
-            else if (playerSelection.toLowerCase() === "paper" &&
-            computerSelection === "rock") {
-                return "You win!";
-            }
-            else if (playerSelection.toLowerCase() === "rock" &&
-            computerSelection === "scissors") {
-                return "You win!";
-            }
-            else if (playerSelection.toLowerCase() === "scissors" &&
-            computerSelection === "paper") {
-                return "You win!";
-            }
-            else if (playerSelection.toLowerCase() === "paper" &&
-            computerSelection === "scissors") {
-                return "You lose!";
-            }
-            else if (playerSelection.toLowerCase() === "rock" &&
-            computerSelection === "paper") {
-                return "You lose!";
-            }
-            else if (playerSelection.toLowerCase() === "scissors" &&
-            computerSelection === "rock") {
-                return "You lose!";
-            }
-            else {
-                return "You must make a selection";
-            }
-        }
-        console.log(roundOne(playerSelection, computerSelection))
+function roundOne(playerSelection, computerSelection) {
+    if (playerSelection.toLowerCase() === computerSelection) {
+        playerScore++;
+        computerScore++;
+        return "Draw!";
+    }
+
+    else if (playerSelection.toLowerCase() === "paper" &&
+    computerSelection === "rock") {
+        playerScore++;
+        return "You win!";
+    }
+    else if (playerSelection.toLowerCase() === "rock" &&
+    computerSelection === "scissors") {
+        playerScore++;
+        return "You win!";
+    }
+    else if (playerSelection.toLowerCase() === "scissors" &&
+    computerSelection === "paper") {
+        playerScore++;
+        return "You win!";
+    }
+    else if (playerSelection.toLowerCase() === "paper" &&
+    computerSelection === "scissors") {
+        computerScore++;
+        return "You lose!";
+    }
+    else if (playerSelection.toLowerCase() === "rock" &&
+    computerSelection === "paper") {
+        computerScore++;
+        return "You lose!";
+    }
+    else if (playerSelection.toLowerCase() === "scissors" &&
+    computerSelection === "rock") {
+        computerScore++;
+        return "You lose!";
+    }
+    else {
+        return "You must make a selection";
     }
 }
+console.log(roundOne(playerSelection, computerSelection))
+
+
 
     
    
