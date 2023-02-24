@@ -5,8 +5,10 @@ function getComputerChoice() {
     }
 
 let computerSelection = getComputerChoice()
-console.log(computerSelection)
 let playerSelection = prompt("Choose Rock, Paper or Scissors")
+console.log("You chose " + playerSelection)
+console.log("The computer chose " + computerSelection)
+
 let computerScore = 0
 let playerScore = 0
 
@@ -55,19 +57,7 @@ console.log(roundOne(playerSelection, computerSelection))
 console.log("Player Score is " + playerScore + " and Computer Score is " + computerScore)
 
 
-function game() {
-    for (i = 0; i <= 5; i++) {
-        roundOne();
-        }
-        if (i === 5 &&
-            playerScore > computerScore) {
-            return "Congratulations you lucky ducky!";
-        }
-        else if (i === 5 &&
-            playerScore < computerScore) {
-            return "Waah, waah, try again!";
-        }
-    }
+
 
 
     
