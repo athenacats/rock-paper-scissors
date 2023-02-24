@@ -8,6 +8,7 @@ let computerSelection = getComputerChoice()
 let playerSelection = prompt("Choose Rock, Paper or Scissors")
 console.log("You chose " + playerSelection)
 console.log("The computer chose " + computerSelection)
+alert("You chose " + playerSelection + " and the computer chose " + computerSelection)
 
 let computerScore = 0
 let playerScore = 0
@@ -78,17 +79,18 @@ function game() {
         let playerSelection = prompt("Choose Rock, Paper or Scissors")
         console.log("You chose " + playerSelection)
         console.log("The computer chose " + computerSelection)
+        alert("You chose " + playerSelection + " and the computer chose " + computerSelection)
         console.log(roundOne(playerSelection, computerSelection))
         console.log("Player Score is " + playerScore + " and Computer Score is " + computerScore + "\n\   ")
         alert("Player Score is " + playerScore + " and Computer Score is " + computerScore)
         }
         if (playerScore > computerScore) {
-            alert("Congratulations you lucky ducky!");
-            return "Congratulations you lucky ducky!";
+            alert("Congratulations, you win you lucky ducky!");
+            return "Congratulations, you win you lucky ducky!";
         }
         else if (playerScore < computerScore) {
-            alert("Waah, waah, try again!");
-            return "Waah, waah, try again!";
+            alert("Waah, waah, you lose, try again!");
+            return "Waah, waah, you lose, try again!";
         }
         else if (playerScore === computerScore) {
             alert("This game is a tie");
