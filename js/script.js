@@ -59,7 +59,7 @@ console.log("Player Score is " + playerScore + " and Computer Score is " + compu
 
 
 function game() {
-    for (i = 0; i <= 5; i++) {
+    for (i = 0; i < 4; i++) {
         let choice = ["rock", "paper", "scissors"];
 
         function getComputerChoice() {
