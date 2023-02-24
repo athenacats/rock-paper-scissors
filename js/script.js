@@ -55,7 +55,7 @@ function roundOne(playerSelection, computerSelection) {
 }
 
 console.log(roundOne(playerSelection, computerSelection))
-console.log("Player Score is " + playerScore + " and Computer Score is " + computerScore)
+console.log("Player Score is " + playerScore + " and Computer Score is " + computerScore + "\n\   ")
 
 
 function game() {
@@ -71,7 +71,7 @@ function game() {
         console.log("You chose " + playerSelection)
         console.log("The computer chose " + computerSelection)
         console.log(roundOne(playerSelection, computerSelection))
-        console.log("Player Score is " + playerScore + " and Computer Score is " + computerScore)
+        console.log("Player Score is " + playerScore + " and Computer Score is " + computerScore + "\n\   ")
         }
         if (playerScore > computerScore) {
             return "Congratulations you lucky ducky!";
