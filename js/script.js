@@ -67,38 +67,7 @@ console.log(roundOne(playerSelection, computerSelection))
 console.log("Player Score is " + playerScore + " and Computer Score is " + computerScore + "\n\   ")
 alert("Player Score is " + playerScore + " and Computer Score is " + computerScore)
 
-function game() {
-    for (i = 0; i < 4; i++) {
-        let choice = ["rock", "paper", "scissors"];
 
-        function getComputerChoice() {
-            return choice[Math.floor(Math.random()*choice.length)]; 
-        }
-
-        let computerSelection = getComputerChoice()
-        let playerSelection = prompt("Choose Rock, Paper or Scissors")
-        console.log("You chose " + playerSelection)
-        console.log("The computer chose " + computerSelection)
-        alert("You chose " + playerSelection + " and the computer chose " + computerSelection)
-        console.log(roundOne(playerSelection, computerSelection))
-        console.log("Player Score is " + playerScore + " and Computer Score is " + computerScore + "\n\   ")
-        alert("Player Score is " + playerScore + " and Computer Score is " + computerScore)
-        }
-        if (playerScore > computerScore) {
-            alert("Congratulations, you win you lucky ducky!");
-            return "Congratulations, you win you lucky ducky!";
-        }
-        else if (playerScore < computerScore) {
-            alert("Waah, waah, you lose, try again!");
-            return "Waah, waah, you lose, try again!";
-        }
-        else if (playerScore === computerScore) {
-            alert("This game is a tie");
-            return "This game is a tie";
-        }
-    }
-
-    console.log(game());
    
 
 
