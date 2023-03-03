@@ -67,10 +67,7 @@ console.log(roundOne(playerSelection, computerSelection))
 console.log("Player Score is " + playerScore + " and Computer Score is " + computerScore + "\n\   ")
 alert("Player Score is " + playerScore + " and Computer Score is " + computerScore)
 
-const button = document.createElement('button')
-button.innerText= 'Panga'
-button.addEventListener('click', ())
-document.body.appendChild(button)
+
    
 
 
