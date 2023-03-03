@@ -1,9 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    background-image: url(images/elephants.jpg);
-    background-repeat: no-repeat;
-    background-color: rgb(151, 174, 179);
+    
     font-family: 'Caveat', cursive, Calibri, Tahoma, sans-serif;
 }
 
@@ -12,16 +10,37 @@
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    background-image: url(images/elephants.jpg);
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    position: relative
+}
+
+.game::before { 
+    content: "";
+    position: absolute;  
+    background-image: url(images/elephants.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(151, 174, 179);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
 }
 
 .titleSwahili {
-    font-size: large;
+    padding-top: 32px;
+    font-size: 48px;
+    position: relative;
+    font-weight: 600;
 
 }
 
 .titleEnglish {
-    font-size: medium;
+    
+    font-size: 32px;
+    font-weight: 400;
+    position: relative;
 }
