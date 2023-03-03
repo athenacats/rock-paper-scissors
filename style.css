@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-image: url(images/elephants.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(151, 174, 179);
+    font-family: 'Caveat', cursive, Calibri, Tahoma, sans-serif;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(images/elephants.jpg);
+    justify-content: center;
+    align-items: center;
+}
+
+.titleSwahili {
+    font-size: large;
+
+}
+
+.titleEnglish {
+    font-size: medium;
+}
