@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    
     font-family: 'Caveat', cursive, Calibri, Tahoma, sans-serif;
 }
 
@@ -10,7 +9,8 @@
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex: auto;
     align-items: center;
     position: relative
 }
@@ -30,17 +30,113 @@
     opacity: 0.3;
 }
 
-.titleSwahili {
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 32px;
-    font-size: 48px;
     position: relative;
-    font-weight: 600;
+    max-height: fit-content;
+}
 
+.titleSwahili {
+    font-size: 48px;
+    font-weight: 600;
 }
 
 .titleEnglish {
     
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 400;   
+}
+
+.score {
+    display: flex;
+    font-size: 16px;
+    flex: auto;
+    padding-top: 48px;
+  
+    justify-content: space-between;
+    align-items: flex-start;
     position: relative;
+    width: 80%;
+    
+}
+
+.playerScore  {
+    flex: auto;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+}
+
+.computerScore  {
+    flex: auto;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+}
+
+.computerCounter  {
+    flex: auto;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+}
+
+.playerCounter  {
+    flex: auto;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+}
+
+.choose {
+    font-weight: 500;
+    font-size: 36px;
+    padding-top: 0;
+    position: absolute;
+    margin-top: 0;
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.movesLeft {
+    font-weight: 500;
+    font-size: 18px;
+    position: absolute;
+   
+    
+    padding-top: 100px;
+}
+
+.options {
+    position: absolute;
+    padding-top: 220px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+button {
+    padding: 8px; 
+    font-size: 24px;
+    background-color: rgb(238, 151, 100);
+    border-radius: 8px;
+    
+    cursor: pointer;
 }
