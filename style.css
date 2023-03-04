@@ -126,7 +126,7 @@
 
 .options {
     position: absolute;
-    padding-top: 220px;
+    padding-top: 250px;
     display: flex;
     justify-content: space-between;
     width: 60%;
@@ -135,8 +135,23 @@
 button {
     padding: 8px; 
     font-size: 24px;
-    background-color: rgb(238, 151, 100);
+    background-color: #ee9764;
     border-radius: 8px;
     
     cursor: pointer;
+}
+
+.reload {
+    display: none;
+    position: absolute;
+    padding: 280px;
+    background-color: #ee9764;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.result {
+    font-size: 24px;
+    padding: 250px;
+    position: absolute;
 }
