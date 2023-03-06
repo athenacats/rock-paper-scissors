@@ -16,7 +16,7 @@ const game = () => {
 
         playerOptions.forEach(option => {
             option.addEventListener('click', function(){
-                const movesLeft = document.querySelector('.movesLeft');
+                const movesLeft = document.querySelector('.movesleft');
                 moves++;
                 movesLeft.innerText = `Hatua Zilizobaki (Moves Left): ${10 - moves}`;
 
@@ -31,59 +31,58 @@ const game = () => {
         
         });
 
-
+    }
         const winner = (player, computer) => {
             const result = document.querySelector('.result');
             const playerScoreBoard = document.querySelector('.playerCounter');
             const computerScoreBoard = document.querySelector('.computerCounter');
             //player = player.toLowerCase();
             //computer = computerChoice.toLowerCase();
-            console.log();
 
-            if (player == computer) {
+            if (player === computer) {
                 result.textContent = 'It is a Draw!';
             }
             
             else if (player == "paper" &&
             computer == "rock") {
-                playerScore++;
                 result.textContent = 'You Win!';
+                playerScore++;
                 playerScoreBoard.textContent = playerScore;
             
             }
             else if (player == "rock" &&
             computer == "scissors") {
-                playerScore++;
                 result.textContent = 'You Win!';
+                playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
             else if (player == "scissors" &&
             computer == "paper") {
-                playerScore++;
                 result.textContent = 'You Win!';
+                playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
             else if (player == "paper" &&
             computer == "scissors") {
-                computerScore++;
                 result.textContent = 'You Lose!';
+                computerScore++;
                 computerScoreBoard.textContent = computerScore;
             }
             else if (player == "rock" &&
             computer == "paper") {
-                computerScore++;
                 result.textContent = 'You Lose!';
+                computerScore++;  
                 computerScoreBoard.textContent = computerScore;
             }
             else if (player == "scissors" &&
             computer== "rock") {
-                computerScore++;
                 result.textContent = 'You Lose!';
+                computerScore++;
                 computerScoreBoard.textContent = computerScore;
             }
-            return result;
+           
         };
-    };
+
     
     const gameOver =(playerOptions,movesLeft) => {
         const chooseMove = document.querySelector('.choose');

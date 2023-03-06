@@ -116,7 +116,7 @@
     
 }
 
-.movesLeft {
+.movesleft {
     font-weight: 500;
     font-size: 18px;
     position: absolute;
@@ -159,8 +159,8 @@ button {
    
     
     font-weight: 600;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     position: relative;
     background-color: #ee9764;
-    display: flex;
+    
 }
