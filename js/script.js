@@ -81,9 +81,8 @@ const game = () => {
                 result.textContent = 'You Lose!';
                 computerScoreBoard.textContent = computerScore;
             }
-            console.log();
+            return result;
         };
-        console.log();
     };
     
     const gameOver =(playerOptions,movesLeft) => {
