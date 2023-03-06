@@ -131,6 +131,7 @@
     display: flex;
     justify-content: space-between;
     width: 60%;
+    
 }
 
 button {
@@ -144,15 +145,18 @@ button {
 
 .reload {
     display: none;
-    position: absolute;
-    padding: 280px;
+    position: relative;
+    padding: 0px;
     background-color: #ee9764;
     cursor: pointer;
     font-size: 18px;
+    
 }
 
 .result {
     font-size: 24px;
-    padding: 250px;
-    position: absolute;
+    padding: 0px;
+    position: relative;
+    background-color: #ee9764;
+    
 }
