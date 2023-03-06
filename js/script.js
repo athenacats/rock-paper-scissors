@@ -10,7 +10,7 @@ const game = () => {
         const paperBtn = document.querySelector('.paper');
         const scissorBtn = document.querySelector('.scissors');
         const playerOptions = [rockBtn, paperBtn, scissorBtn];
-        //const computerOptions = ['rock', 'paper', 'scissors'];
+        const computerOptions = ['rock', 'paper', 'scissors'];
     
 
 
@@ -20,9 +20,9 @@ const game = () => {
                 moves++;
                 movesLeft.innerText = `Hatua Zilizobaki (Moves Left): ${10 - moves}`;
 
-                const computerChoice = ["rock", "paper", "scissors"][Math.floor(Math.random()*3)];
+                const computerChoice = computerOptions[Math.floor(Math.random()*3)];
  
-                winner(this.innerText.toLowerCase(), computerChoice.toLowerCase);
+                winner(this.innerText.toLowerCase(), computerChoice.toLowerCase());
 
                 if (moves == 10){
                     gameOver(playerOptions,movesLeft);//
@@ -30,9 +30,7 @@ const game = () => {
             });
         
         });
-    
-    
-    
+
 
         const winner = (player, computer) => {
             const result = document.querySelector('.result');
@@ -125,13 +123,3 @@ const game = () => {
     
 };
 game();
- 
-
-
-
-   
-
-
-    
-   
-
