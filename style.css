@@ -146,8 +146,9 @@ button {
 .reload {
     display: none;
     position: relative;
-    padding: 0px;
+    margin-bottom: 40px;
     background-color: #ee9764;
+   
     cursor: pointer;
     font-size: 18px;
     
@@ -155,8 +156,11 @@ button {
 
 .result {
     font-size: 24px;
-    padding: 0px;
+    
+    
+    font-weight: 600;
+    margin-bottom: 80px;
     position: relative;
     background-color: #ee9764;
-    
+    display: flex;
 }
