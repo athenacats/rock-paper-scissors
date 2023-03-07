@@ -147,7 +147,7 @@ button {
    
     
     .options{
-        width: 100vw;
+        width: 80vw;
     }
 
     .choose {
@@ -187,5 +187,10 @@ button {
 
     .result {
         font-size: 18px;
+    }
+
+    .game {
+        
+        height: 100vh;
     }
     
