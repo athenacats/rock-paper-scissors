@@ -142,16 +142,50 @@ button {
     
 }
 
-@media screen and (max-width: 612px)
+@media screen and (max-width: 470px)
 {  
-    .title{
-        text-align: center;
-    }
-    .score{
-        position: absolute;
-        top: 200px;
-        width: 100vw;
-    }
+   
+    
     .options{
         width: 100vw;
     }
+
+    .choose {
+        font-weight: 500;
+        font-size: 24px;     
+    }
+
+    button {    
+        font-size: 16px;
+    }
+    
+    .titleSwahili {
+        font-size: 28px;
+    }
+    
+    .titleEnglish { 
+        font-size: 20px;
+    }
+    
+    .score {
+        font-size: 14px;
+        padding-top: 36px;   
+    }
+    
+    
+    .computerCounter  {
+        font-size: 20px;
+    }
+    
+    .playerCounter  {
+        font-size: 20px;
+    }
+
+    .title {
+        padding-top: 50px;    
+    }
+
+    .result {
+        font-size: 18px;
+    }
+    
