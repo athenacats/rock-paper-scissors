@@ -115,17 +115,17 @@ function game() {
             
 
                 if(playerScore > computerScore){
-                    result.style.fontSize = '2rem';
+                    result.style.fontSize = '4vw';
                     result.innerText = 'Umeshinda! You Won The Game!'
                     result.style.color = '#000000';
                 }
                 else if(playerScore < computerScore){
-                    result.style.fontSize = '2rem';
+                    result.style.fontSize = '4vw';
                     result.innerText = 'Umeshindwa:( You Lost The Game!';
                     result.style.color = 'red';
                 }
                 else{
-                    result.style.fontSize = '2rem';
+                    result.style.fontSize = '4vw';
                     result.innerText = "Rudia! It's a Tie :|";
                     result.style.color = 'dark-grey'
                 }
