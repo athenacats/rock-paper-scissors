@@ -1,9 +1,11 @@
+/*defines css for entire thing*/
 *{
     padding: 0;
     margin: 0;
     font-family: 'Caveat', cursive, Calibri, Tahoma, sans-serif;
 }
-
+/*one page fitting in viewport, a single flex column*/
+/*it deals with all the content at the forefront*/
 .game {
     display: flex;
     flex-direction: column;
@@ -15,6 +17,7 @@
     position: relative
 }
 
+/*this deals with content on the background, ie the photo*/
 .game::before { 
     content: "";
     position: absolute;  
@@ -30,6 +33,8 @@
     opacity: 0.3;
 }
 
+/*all other forefront items need the position rule to make sure
+the are on the forefront*/
 .title {
     display: flex;
     flex-direction: column;
@@ -45,8 +50,7 @@
     font-weight: 600;
 }
 
-.titleEnglish {
-    
+.titleEnglish {  
     font-size: 32px;
     font-weight: 400;   
 }
@@ -56,7 +60,6 @@
     font-size: 16px;
     flex: auto;
     padding-top: 26px;
-  
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
@@ -65,17 +68,13 @@
 }
 
 
-.computerCounter  {
-    
-    text-align: center;
-    
+.computerCounter  {    
+    text-align: center;  
     font-size: 32px;
 }
 
 .playerCounter  {
-    
     text-align: center;
-    
     font-size: 32px;
 }
 
@@ -94,8 +93,6 @@
     font-weight: 500;
     font-size: 18px;
     position: absolute;
-   
-    
     padding-top: 100px;
 }
 
@@ -105,43 +102,44 @@
     display: flex;
     justify-content: space-between;
     width: 60%;
-    
+    /*the width sets the placement of the bottons*/    
 }
 
 button {
     padding: 8px; 
     font-size: 24px;
     background-color: #ee9764;
-    border-radius: 8px;
-    
+    border-radius: 8px;    
     cursor: pointer;
+    /*because the buttons are clickable*/
 }
 
 .reload {
+    /*so that it's not shown by default*/
     display: none;
     position: relative;
     margin-bottom: 40px;
-    background-color: #ee9764;
-   
+    background-color: #ee9764;  
     cursor: pointer;
-    font-size: 18px;
-    
+    font-size: 18px;    
 }
 
 .result {
     font-size: 24px;
     display: flex;
     border: #633920;
-
     padding: 8px;
     border-radius: 8px;
     font-weight: 600;
     margin-bottom: 40px;
     position: relative;
-    background-color: #ee9764;
-    
+    background-color: #ee9764;   
 }
 
+/*for mobile responsive design. the 470px was set by me 
+because of the font of my title
+to make mobile responsive fonts, use vw instead. 
+see script, function gameOver()*/
 @media screen and (max-width: 470px)
 {  
    
@@ -171,8 +169,7 @@ button {
         font-size: 14px;
         padding-top: 36px;   
     }
-    
-    
+      
     .computerCounter  {
         font-size: 20px;
     }
