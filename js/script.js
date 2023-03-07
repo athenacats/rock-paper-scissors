@@ -116,18 +116,18 @@ function game() {
 
                 if(playerScore > computerScore){
                     result.style.fontSize = '2rem';
-                    result.innerText = 'You Won The Game'
-                    result.style.color = '#308D46';
+                    result.innerText = 'Umeshinda! You Won The Game!'
+                    result.style.color = '#000000';
                 }
                 else if(playerScore < computerScore){
                     result.style.fontSize = '2rem';
-                    result.innerText = 'You Lost The Game';
+                    result.innerText = 'Umeshindwa:( You Lost The Game!';
                     result.style.color = 'red';
                 }
                 else{
                     result.style.fontSize = '2rem';
-                    result.innerText = 'Tie';
-                    result.style.color = 'grey'
+                    result.innerText = "Rudia! It's a Tie :|";
+                    result.style.color = 'dark-grey'
                 }
                 reloadBtn.innerText = 'Restart';
                 reloadBtn.style.display = 'flex'

@@ -131,7 +131,10 @@ button {
 .result {
     font-size: 24px;
     display: flex;
+    border: #633920;
+
     padding: 8px;
+    border-radius: 8px;
     font-weight: 600;
     margin-bottom: 40px;
     position: relative;
